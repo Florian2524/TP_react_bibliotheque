@@ -3,21 +3,27 @@ import { Link, NavLink } from 'react-router-dom';
 function Header() {
   return (
     <header className="header">
-      <div className="header-content">
+      <div className="header-content header-content-tp">
         <Link to="/" className="brand">
-          <span className="brand-badge">📚</span>
-          <div>
-            <p className="brand-name">Ma Bibliothèque</p>
-            <p className="brand-subtitle">Gestion de livres en React</p>
-          </div>
+          Bibliothèque
         </Link>
 
-        <nav className="nav">
-          <NavLink to="/" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+        <nav className="nav nav-tp">
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive ? 'nav-link nav-link-tp active' : 'nav-link nav-link-tp'
+            }
+          >
             Accueil
           </NavLink>
 
-          <NavLink to="/ajouter" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+          <NavLink
+            to="/ajouter"
+            className={({ isActive }) =>
+              isActive ? 'nav-link nav-link-tp active' : 'nav-link nav-link-tp'
+            }
+          >
             Ajouter un livre
           </NavLink>
         </nav>

@@ -3,7 +3,14 @@ import Header from './components/Header';
 import BookList from './pages/BookList';
 import AddBook from './pages/AddBook';
 import EditBook from './pages/EditBook';
-import './App.css';
+
+import './styles/base.css';
+import './styles/layout.css';
+import './styles/header.css';
+import './styles/filters.css';
+import './styles/books.css';
+import './styles/forms.css';
+import './styles/modal.css';
 
 function App() {
   return (
