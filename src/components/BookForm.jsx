@@ -18,6 +18,7 @@ function BookForm({
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
 
+  /* Pré-remplit le formulaire en mode modification */
   useEffect(() => {
     setFormData({
       ...emptyFormData,
@@ -33,6 +34,7 @@ function BookForm({
       [name]: value,
     }));
 
+    /* Efface l'erreur du champ modifié */
     setErrors((prevErrors) => ({
       ...prevErrors,
       [name]: '',

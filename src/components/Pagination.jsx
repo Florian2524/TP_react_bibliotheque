@@ -4,6 +4,7 @@ function Pagination({
   onPreviousPage,
   onNextPage,
 }) {
+  /* Masque la pagination si une seule page */
   if (totalPages <= 1) {
     return null;
   }

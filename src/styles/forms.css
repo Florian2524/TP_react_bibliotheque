@@ -1,3 +1,8 @@
+/* =========================
+   FORMULAIRE LIVRE
+   ========================= */
+
+/* Page du formulaire */
 .tp-form-page {
   display: flex;
   flex-direction: column;
@@ -5,6 +10,7 @@
   padding-top: 6px;
 }
 
+/* Titre */
 .tp-form-page-title {
   font-size: 1.45rem;
   font-weight: 700;
@@ -13,6 +19,7 @@
   text-align: center;
 }
 
+/* Conteneur du formulaire */
 .tp-form-wrapper {
   width: 100%;
   max-width: 365px;
@@ -22,18 +29,21 @@
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
+/* Formulaire */
 .tp-book-form {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
+/* Groupe de champ */
 .tp-form-group {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
 
+/* Label */
 .tp-form-label {
   font-size: 0.86rem;
   font-weight: 700;
@@ -44,6 +54,7 @@
   color: #2f4358;
 }
 
+/* Champs de saisie */
 .tp-form-input,
 .tp-form-textarea {
   width: 100%;
@@ -55,6 +66,7 @@
   color: #111827;
 }
 
+/* Focus des champs */
 .tp-form-input:focus,
 .tp-form-textarea:focus {
   outline: none;
@@ -62,11 +74,13 @@
   box-shadow: 0 0 0 1px #5d9cec;
 }
 
+/* Zone de texte */
 .tp-form-textarea {
   min-height: 96px;
   resize: vertical;
 }
 
+/* Messages d'erreur */
 .tp-field-error,
 .tp-global-error {
   color: #d44c4c;
@@ -74,12 +88,14 @@
   line-height: 1.3;
 }
 
+/* Actions du formulaire */
 .tp-form-actions {
   display: flex;
   justify-content: flex-start;
   padding-top: 2px;
 }
 
+/* Responsive */
 @media (max-width: 768px) {
   .tp-form-wrapper {
     max-width: 100%;

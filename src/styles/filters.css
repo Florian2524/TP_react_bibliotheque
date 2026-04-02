@@ -1,3 +1,8 @@
+/* =========================
+   FILTRES & TRI
+   ========================= */
+
+/* Barre de filtres */
 .filter-bar {
   background-color: #ffffff;
   border: 1px solid #c8c2c5;
@@ -5,6 +10,7 @@
   padding: 16px;
 }
 
+/* Organisation des filtres */
 .filter-row {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr auto;
@@ -12,22 +18,26 @@
   align-items: end;
 }
 
+/* Groupe de filtre */
 .filter-group {
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
 
+/* Variante large */
 .filter-group-large {
   min-width: 0;
 }
 
+/* Label */
 .filter-label {
   font-size: 0.88rem;
   font-weight: 700;
   color: #2f4358;
 }
 
+/* Champs (input + select) */
 .filter-input,
 .filter-select {
   width: 100%;
@@ -39,6 +49,7 @@
   font-size: 0.92rem;
 }
 
+/* Focus des champs */
 .filter-input:focus,
 .filter-select:focus {
   outline: none;
@@ -46,6 +57,7 @@
   box-shadow: 0 0 0 1px #5d9cec;
 }
 
+/* Responsive */
 @media (max-width: 768px) {
   .filter-row {
     grid-template-columns: 1fr;

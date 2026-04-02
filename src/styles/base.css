@@ -1,24 +1,33 @@
+/* =========================
+   RESET & STYLES GLOBAUX
+   ========================= */
+
+/* Reset de base */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/* Scroll fluide */
 html {
   scroll-behavior: smooth;
 }
 
+/* Styles principaux */
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #c9c5c7;
   color: #111827;
 }
 
+/* Liens héritent du style texte */
 a {
   color: inherit;
   text-decoration: none;
 }
 
+/* Uniformise les champs de formulaire */
 button,
 input,
 select,
@@ -26,6 +35,7 @@ textarea {
   font: inherit;
 }
 
+/* Images responsives */
 img {
   max-width: 100%;
 }

@@ -22,6 +22,7 @@ function EditBook() {
       } catch (err) {
         console.error(err);
 
+        /* Cas où l'id ne correspond à aucun livre */
         if (err.response?.status === 404) {
           setError('Livre introuvable.');
         } else {

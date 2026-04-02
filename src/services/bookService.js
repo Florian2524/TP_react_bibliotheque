@@ -1,5 +1,8 @@
+/* Service API livres */
+
 import axios from 'axios';
 
+/* URL de base de l'API */
 const API_URL = 'http://localhost:3001/books';
 
 export async function getBooks() {

@@ -1,9 +1,8 @@
-// Fichier de regroupement des fonctions d'aide pour les livres (formatage de date, troncature de texte, etc.)
+/* =========================
+   HELPERS LIVRES
+   ========================= */
 
-
-
-// Formatte une date au format français
-
+/* Formatage date (FR) */
 export function formatDate(dateString) {
   if (!dateString) {
     return 'Date inconnue';
@@ -18,8 +17,7 @@ export function formatDate(dateString) {
   return date.toLocaleDateString('fr-FR');
 }
 
-// Troncature de texte avec ajout de "..." si le texte dépasse la longueur maximale
-
+/* Troncature texte */
 export function truncateText(text, maxLength = 180) {
   if (!text) {
     return '';
@@ -32,8 +30,7 @@ export function truncateText(text, maxLength = 180) {
   return `${text.slice(0, maxLength)}...`;
 }
 
-// Obtenir le chemin complet de la couverture d'un livre, en gérant les URL externes et les chemins locaux
-
+/* Chemin image couverture */
 export function getCoverPath(cover) {
   if (!cover) {
     return '';
@@ -46,8 +43,7 @@ export function getCoverPath(cover) {
   return `/images/couvertures/${cover}`;
 }
 
-// Obtenir la liste des genres uniques à partir d'une liste de livres, triée par ordre alphabétique
-
+/* Genres uniques triés */
 export function getUniqueGenres(books) {
   const genres = books
     .map((book) => book.genre)
@@ -56,8 +52,7 @@ export function getUniqueGenres(books) {
   return [...new Set(genres)].sort((a, b) => a.localeCompare(b, 'fr'));
 }
 
-// Filtrer les livres en fonction du terme de recherche et du genre sélectionné
-
+/* Filtrage livres */
 export function filterBooks(books, searchTerm, selectedGenre) {
   return books.filter((book) => {
     const title = book.titre?.toLowerCase() || '';
@@ -74,8 +69,7 @@ export function filterBooks(books, searchTerm, selectedGenre) {
   });
 }
 
-// Trier les livres par date de publication en fonction de l'ordre de tri sélectionné (ascendant ou descendant)
-
+/* Tri par date */
 export function sortBooksByDate(books, sortOrder) {
   if (!sortOrder) {
     return books;

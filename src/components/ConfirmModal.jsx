@@ -7,6 +7,7 @@ function ConfirmModal({
   onConfirm,
   onCancel,
 }) {
+  /* Ne rend rien si la modale est fermée */
   if (!isOpen) {
     return null;
   }

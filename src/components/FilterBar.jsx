@@ -61,7 +61,11 @@ function FilterBar({
         </div>
 
         <div className="filter-actions">
-          <button type="button" className="btn btn-reset" onClick={onResetFilters}>
+          <button
+            type="button"
+            className="btn btn-reset"
+            onClick={onResetFilters}
+          >
             Réinitialiser
           </button>
         </div>

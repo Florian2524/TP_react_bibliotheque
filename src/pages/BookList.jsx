@@ -58,6 +58,7 @@ function BookList() {
     };
   }, [actionMessage]);
 
+  /* Retour à la première page si les filtres changent */
   useEffect(() => {
     setCurrentPage(1);
   }, [searchTerm, selectedGenre, sortOrder]);
@@ -77,6 +78,7 @@ function BookList() {
     return filteredBooks.slice(startIndex, endIndex);
   }, [filteredBooks, currentPage]);
 
+  /* Ajuste la page courante si le total diminue */
   useEffect(() => {
     if (currentPage > totalPages) {
       setCurrentPage(totalPages);

@@ -6,6 +6,7 @@ function BookCard({ book, onDelete }) {
     onDelete(book.id, book.titre);
   }
 
+  /* Image de secours si la couverture est introuvable */
   function handleImageError(event) {
     event.target.src = '/images/couvertures/default-cover.jpg';
   }
